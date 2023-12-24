@@ -5,7 +5,7 @@ import pytest
 
 from selene import browser, support
 from appium import webdriver
-from ivi_test_project import utils
+from qa_guru_python_diploma import utils
 from dotenv import load_dotenv
 
 
