@@ -40,9 +40,9 @@ class Config(BaseModel):
             options.set_capability('app', self.app_bstack)
             options.set_capability(
                 'bstack:options', {
-                    'projectName': 'First Python project',
-                    'buildName': 'browserstack-build-1',
-                    'sessionName': 'BStack first_test',
+                    'projectName': 'Ivi Android tests project',
+                    'buildName': 'Ivi Android build',
+                    'sessionName': 'Ivi Android tests',
                     'userName': self.userName,
                     'accessKey': self.accessKey,
                 },
