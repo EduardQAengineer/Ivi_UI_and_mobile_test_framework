@@ -61,5 +61,3 @@ def android_mobile_management(context):
 
     if context == 'bstack':
         utils.allure_attach.bstack_video(session_id)
-
-    browser.close()
