@@ -5,7 +5,7 @@ from selene import browser, have
 
 def test_control_buttons_should_be_shown():
     # THEN
-    with step('Button "Иой ivi" are shown'):
+    with step('Button "Мой ivi" are shown'):
         browser.element((AppiumBy.XPATH, '//android.widget.TextView[@text="Мой ivi"]')).should(have.text('Мой ivi'))
 
     with step('Button "Каталог" are shown'):
