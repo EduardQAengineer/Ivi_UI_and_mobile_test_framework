@@ -14,8 +14,10 @@ def test_serials_sections_should_be_shown():
 
 
 def test_select_movie_in_recommends():
+    # WHEN
     with step('Tap on recommend movie'):
         browser.element((AppiumBy.XPATH, '(//android.widget.FrameLayout[@resource-id="ru.ivi.client:id/poster"])[2]')).click()
 
+    # THEN
     with step('Button "Смотреть" is shown'):
         browser.element((AppiumBy.XPATH, '//android.widget.TextView[@text="Смотреть"]')).should(have.text('Смотреть'))
