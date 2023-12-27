@@ -50,9 +50,9 @@ def android_mobile_management(context):
 
     yield
 
-    utils.allure_attach.screenshot()
+    utils.allure_attach.screenshot(browser)
 
-    utils.allure_attach.page_source_xml()
+    utils.allure_attach.page_source_xml(browser)
 
     session_id = browser.driver.session_id
 

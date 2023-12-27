@@ -4,6 +4,7 @@ import os
 from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from qa_guru_python_diploma.utils import allure_attach
 
 
 DEFAULT_BROWSER_VERSION = '100.0'
@@ -47,5 +48,10 @@ def setup_browser(request):
     browser.config.window_width = 1801
 
     yield browser
+
+    allure_attach.screenshot(browser)
+    allure_attach.logs(browser)
+    allure_attach.html(browser)
+    allure_attach.video(browser)
 
     browser.quit()
