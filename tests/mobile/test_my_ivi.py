@@ -1,6 +1,8 @@
 import allure
+from appium.webdriver.common.appiumby import AppiumBy
 
 from ivi_ui_and_mobile_test_framework.pages.mobile import my_ivi
+from selene import browser, have
 
 
 @allure.epic('My Ivi')
@@ -31,3 +33,8 @@ class TestMyIvi:
 
         # THEN
         my_ivi.button_watch_should_be_shown()
+
+    def test_profile(self):
+        browser.element((AppiumBy.XPATH, '//android.widget.TextView[@text="Профиль"]')).click()
+        (browser.element((AppiumBy.XPATH, '//android.widget.TextView[@text="Войти или зарегистрироваться"]'))
+         .should(have.text('Войти или зарегистрироваться')))
