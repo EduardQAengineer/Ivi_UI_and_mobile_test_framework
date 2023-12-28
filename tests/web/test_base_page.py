@@ -22,7 +22,7 @@ class TestBasePage:
         my_ivi_at_top_menu_should_be_visible()
 
     @allure.story('Open movie page')
-    @allure.title('Mobie title should be shown')
+    @allure.title('Movie page should be shown')
     @allure.feature('Movie page')
     @allure.label('microservice', 'Movie page')
     @allure.label('owner', 'allure8')
