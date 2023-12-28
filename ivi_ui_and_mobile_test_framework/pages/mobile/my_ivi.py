@@ -15,7 +15,7 @@ def serials_should_be_shown():
 
 def tap_on_recommend_movie():
     with step('Tap on recommend movie'):
-        browser.element((AppiumBy.XPATH, '(//android.widget.FrameLayout[@resource-id="ru.ivi.client:id/poster"])[2]')).click()
+        browser.element((AppiumBy.XPATH, '(//android.widget.FrameLayout[@resource-id="ru.ivi.client:id/poster"])')).click()
 
 
 def button_watch_should_be_shown():
