@@ -19,7 +19,6 @@ class TestMyIvi:
         # THEN
         my_ivi.serials_should_be_shown()
 
-
     @allure.title("Select movie in recommends")
     @allure.feature("Recommends section")
     @allure.label("microservice", "My Ivi")
