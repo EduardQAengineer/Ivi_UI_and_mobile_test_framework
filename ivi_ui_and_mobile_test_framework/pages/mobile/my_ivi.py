@@ -21,3 +21,8 @@ def tap_on_recommend_movie():
 def button_watch_should_be_shown():
     with step('Button "Смотреть" is shown'):
         browser.element((AppiumBy.XPATH, '//android.widget.TextView[@text="Смотреть"]')).should(have.text('Смотреть'))
+
+
+def confirm_cookie():
+    with step('Confirm cookie'):
+        browser.element((AppiumBy.XPATH, '//android.widget.TextView[@text="Соглашаюсь"]')).click()
