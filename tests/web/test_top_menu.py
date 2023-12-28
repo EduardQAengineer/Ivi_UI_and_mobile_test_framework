@@ -1,5 +1,6 @@
-from selene import browser, have, be
 from qa_guru_python_diploma.pages.web.base_page import open_main_page
+from qa_guru_python_diploma.pages.web.top_menu import click_on_whats_new, check_whats_new_title, click_on_movies, \
+    check_movies_title, click_on_serials, check_serials_title, click_on_cartoons, check_cartoons_title
 
 
 def test_whats_new():
@@ -7,10 +8,10 @@ def test_whats_new():
     open_main_page()
 
     # WHEN
-    browser.element('[data-test="menu_section_whatsnew"]').should(be.visible).click()
+    click_on_whats_new()
 
     # THEN
-    browser.element('.nbl-segmentControlItem__caption:nth-child(1)').should(have.text('Что нового'))
+    check_whats_new_title()
 
 
 def test_movies():
@@ -18,29 +19,27 @@ def test_movies():
     open_main_page()
 
     # WHEN
-    browser.element('[data-test="menu_section_films"]').should(be.visible).click()
+    click_on_movies()
 
     # THEN
-    browser.element('.headerBar__title').should(have.text('Фильмы смотреть онлайн'))
-
+    check_movies_title()
 
 def test_serials():
     # GIVEN
     open_main_page()
 
     # WHEN
-    browser.element('[data-test="menu_section_menu_serials"]').should(be.visible).click()
+    click_on_serials()
 
     # THEN
-    browser.element('.headerBar__title').should(have.text('Сериалы смотреть онлайн'))
-
+    check_serials_title()
 
 def test_cartoons():
     # GIVEN
     open_main_page()
 
     # WHEN
-    browser.element('[data-test="menu_section_kids"]').should(be.visible).click()
+    click_on_cartoons()
 
     # THEN
-    browser.element('.headerBar__title').should(have.text('Мультфильмы смотреть онлайн'))
+    check_cartoons_title()
