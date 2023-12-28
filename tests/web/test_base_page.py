@@ -1,5 +1,6 @@
 from selene import browser, have, be
-from qa_guru_python_diploma.pages.web.base_page import open_main_page
+from qa_guru_python_diploma.pages.web.base_page import open_main_page, my_ivi_at_top_menu_should_be_visible, \
+    click_on_movie_preview, movie_title_should_be_visible, click_on_promo, check_promo_title, check_promo_button
 
 
 def test_open_base_page():
@@ -7,7 +8,7 @@ def test_open_base_page():
     open_main_page()
 
     # THEN
-    browser.element('#headerTop').should(have.text('Мой Иви'))
+    my_ivi_at_top_menu_should_be_visible()
 
 
 def test_open_movie():
@@ -15,10 +16,10 @@ def test_open_movie():
     open_main_page()
 
     # WHEN
-    browser.element('[data-content-id="16974"]').should(be.visible).click()
+    click_on_movie_preview()
 
     # THEN
-    browser.element('[data-testid="watchTitle"]').should(have.text('Сериал Блеск смотреть онлайн'))
+    movie_title_should_be_visible()
 
 
 def test_open_promo():
@@ -26,8 +27,8 @@ def test_open_promo():
     open_main_page()
 
     # WHEN
-    browser.element('.teaserPlate.home__teaserPlate').should(be.visible).click()
+    click_on_promo()
 
     # THEN
-    browser.element('.segmentedLanding__title.segmentedLanding__title_default').should(have.text('Подписка Иви'))
-    browser.element('.nbl-button.nbl-button_textAlign_center.nbl-button_style_kioshi.nbl-button_hasBadge_0.segmentedLanding__nbl-button .nbl-button__primaryText').should(have.text('Попробовать 60 дней бесплатно'))
+    check_promo_title()
+    check_promo_button()
