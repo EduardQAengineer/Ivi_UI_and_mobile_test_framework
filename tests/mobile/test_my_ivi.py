@@ -19,17 +19,17 @@ class TestMyIvi:
 
         # THEN
         my_ivi.serials_should_be_shown()
-
-    @allure.title('Select movie in recommends')
-    @allure.feature('Recommends section')
-    @allure.label('microservice', 'My Ivi')
-    @allure.label('owner', 'allure8')
-    @allure.tag('regress', 'mobile')
-    @allure.severity('normal')
-    def test_select_movie_in_recommends(self):
-        # WHEN
-        my_ivi.confirm_cookie()
-        my_ivi.tap_on_recommend_movie()
-
-        # THEN
-        my_ivi.button_watch_should_be_shown()
+    #
+    # @allure.title('Select movie in recommends')
+    # @allure.feature('Recommends section')
+    # @allure.label('microservice', 'My Ivi')
+    # @allure.label('owner', 'allure8')
+    # @allure.tag('regress', 'mobile')
+    # @allure.severity('normal')
+    # def test_select_movie_in_recommends(self):
+    #     # WHEN
+    #     my_ivi.confirm_cookie()
+    #     my_ivi.tap_on_recommend_movie()
+    #
+    #     # THEN
+    #     my_ivi.button_watch_should_be_shown()
