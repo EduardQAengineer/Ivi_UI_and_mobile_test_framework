@@ -20,11 +20,14 @@ def check_movies_title():
 def click_on_serials():
     browser.element('[data-test="menu_section_menu_serials"]').should(be.visible).click()
 
+
 def check_serials_title():
     browser.element('.headerBar__title').should(have.text('Сериалы смотреть онлайн'))
 
+
 def click_on_cartoons():
     browser.element('[data-test="menu_section_kids"]').should(be.visible).click()
+
 
 def check_cartoons_title():
     browser.element('.headerBar__title').should(have.text('Мультфильмы смотреть онлайн'))
