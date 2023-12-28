@@ -1,6 +1,6 @@
 import allure
 
-from qa_guru_python_diploma.pages.mobile import control_menu
+from ivi_ui_and_mobile_test_framework.pages.mobile import control_menu
 
 
 @allure.title('Control buttons should be shown')

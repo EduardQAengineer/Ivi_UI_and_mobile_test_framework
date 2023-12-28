@@ -1,6 +1,6 @@
 import allure
 
-from qa_guru_python_diploma.pages.mobile import my_ivi
+from ivi_ui_and_mobile_test_framework.pages.mobile import my_ivi
 
 
 @allure.epic('My Ivi')

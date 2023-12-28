@@ -1,5 +1,5 @@
-from qa_guru_python_diploma.pages.web.base_page import open_main_page
-from qa_guru_python_diploma.pages.web.top_menu import TopMenu
+from ivi_ui_and_mobile_test_framework.pages.web.base_page import open_main_page
+from ivi_ui_and_mobile_test_framework.pages.web.top_menu import TopMenu
 
 
 top_menu = TopMenu()

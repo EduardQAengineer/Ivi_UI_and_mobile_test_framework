@@ -1,7 +1,7 @@
 import allure
 
-from qa_guru_python_diploma.pages.web.base_page import open_main_page
-from qa_guru_python_diploma.pages.web.search import click_on_search, type_movie_title, search_result_should_be_visible
+from ivi_ui_and_mobile_test_framework.pages.web.base_page import open_main_page
+from ivi_ui_and_mobile_test_framework.pages.web.search import click_on_search, type_movie_title, search_result_should_be_visible
 
 
 @allure.epic('Search')

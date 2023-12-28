@@ -2,7 +2,7 @@ import os
 
 from appium.options.android import UiAutomator2Options
 from dotenv import load_dotenv
-from qa_guru_python_diploma import utils
+from ivi_ui_and_mobile_test_framework import utils
 from pydantic import BaseModel
 
 
