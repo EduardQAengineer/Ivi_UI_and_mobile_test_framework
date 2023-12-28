@@ -1,6 +1,8 @@
 from qa_guru_python_diploma.pages.web.base_page import open_main_page
-from qa_guru_python_diploma.pages.web.top_menu import click_on_whats_new, check_whats_new_title, click_on_movies, \
-    check_movies_title, click_on_serials, check_serials_title, click_on_cartoons, check_cartoons_title
+from qa_guru_python_diploma.pages.web.top_menu import TopMenu
+
+
+top_menu = TopMenu()
 
 
 def test_whats_new():
@@ -8,10 +10,10 @@ def test_whats_new():
     open_main_page()
 
     # WHEN
-    click_on_whats_new()
+    top_menu.click_on_whats_new()
 
     # THEN
-    check_whats_new_title()
+    top_menu.check_whats_new_title()
 
 
 def test_movies():
@@ -19,10 +21,10 @@ def test_movies():
     open_main_page()
 
     # WHEN
-    click_on_movies()
+    top_menu.click_on_movies()
 
     # THEN
-    check_movies_title()
+    top_menu.check_movies_title()
 
 
 def test_serials():
@@ -30,10 +32,10 @@ def test_serials():
     open_main_page()
 
     # WHEN
-    click_on_serials()
+    top_menu.click_on_serials()
 
     # THEN
-    check_serials_title()
+    top_menu.check_serials_title()
 
 
 def test_cartoons():
@@ -41,7 +43,7 @@ def test_cartoons():
     open_main_page()
 
     # WHEN
-    click_on_cartoons()
+    top_menu.click_on_cartoons()
 
     # THEN
-    check_cartoons_title()
+    top_menu.check_cartoons_title()
