@@ -24,6 +24,7 @@ def test_movies():
     # THEN
     check_movies_title()
 
+
 def test_serials():
     # GIVEN
     open_main_page()
@@ -33,6 +34,7 @@ def test_serials():
 
     # THEN
     check_serials_title()
+
 
 def test_cartoons():
     # GIVEN
