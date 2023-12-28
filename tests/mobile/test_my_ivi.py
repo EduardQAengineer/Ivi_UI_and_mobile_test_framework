@@ -11,6 +11,7 @@ from ivi_ui_and_mobile_test_framework.pages.mobile import my_ivi, base_page
 @allure.label('owner', 'allure8')
 @allure.tag('regress', 'mobile')
 @allure.severity('normal')
+@allure.label('layer', 'mobile')
 def test_serials_sections_should_be_shown():
     # WHEN
     base_page.confirm_cookie()

@@ -11,6 +11,7 @@ from ivi_ui_and_mobile_test_framework.pages.mobile import control_menu
 @allure.label('owner', 'allure8')
 @allure.tag('smoke', 'regress', 'mobile', 'critical')
 @allure.severity('critical')
+@allure.label('layer', 'mobile')
 def test_control_buttons_should_be_shown():
     # THEN
     control_menu.button_my_ivi_should_be_shown()

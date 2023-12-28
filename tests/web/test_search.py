@@ -12,6 +12,7 @@ from ivi_ui_and_mobile_test_framework.pages.web.search import click_on_search, t
 @allure.label('owner', 'allure8')
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')
+@allure.label('layer', 'web')
 def test_find_movie_by_title():
     # GIVEN
     title = 'Хроники риддика'

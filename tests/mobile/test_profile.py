@@ -11,6 +11,7 @@ from ivi_ui_and_mobile_test_framework.pages.mobile import base_page, profile
 @allure.label('owner', 'allure8')
 @allure.tag('regress', 'mobile', 'critical')
 @allure.severity('critical')
+@allure.label('layer', 'mobile')
 def test_open_profile():
     # WHEN
     base_page.confirm_cookie()

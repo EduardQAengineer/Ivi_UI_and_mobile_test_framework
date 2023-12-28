@@ -13,6 +13,7 @@ class TestBasePage:
     @allure.label('owner', 'allure8')
     @allure.tag('smoke', 'regress', 'web', 'critical')
     @allure.severity('critical')
+    @allure.label('layer', 'web')
     def test_open_base_page(self):
         # GIVEN
         open_main_page()
