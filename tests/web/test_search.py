@@ -5,8 +5,8 @@ from ivi_ui_and_mobile_test_framework.pages.web.search import click_on_search, t
 
 
 @allure.epic('Search')
-@allure.story('find_movie')
-@allure.title('find_movie_by_title')
+@allure.story('Find_movie')
+@allure.title('Find_movie_by_title')
 @allure.feature('Search')
 @allure.label('microservice', 'Search')
 @allure.label('owner', 'allure8')
