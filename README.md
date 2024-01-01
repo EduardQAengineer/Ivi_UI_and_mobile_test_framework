@@ -30,9 +30,9 @@
 
 ### Список проверок, реализованных в mobile автотестах
 
-- [x] Control buttons should be shown
-- [x] Serials sections should be shown
-- [x] Open profile
+- [x] Элементы управления отображаются
+- [x] Раздел "Сериалы" отображается
+- [x] Раздел "Профиль" отображается
 
 ----
 
