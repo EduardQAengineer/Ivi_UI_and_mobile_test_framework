@@ -56,10 +56,10 @@ pytest --browser-version=100 ./tests/web/
 
 #### Для запуска mobile автотестов выполнить в cli:
 > [!NOTE]
-> Ключ `--context` не обязателен, по умолчанию тесты будут запущены на BrowserStack.
-* Для запуска на реальном устройстве указать ключ `--context=local_real_device`.
-* Для запуска на виртуальном устройстве указать ключ `--context=local_real_device`.
-* Для запуска на BrowserStack указать ключ `--context=bstack`.
+> Ключ `--context` не обязателен, по умолчанию тесты будут запущены на BrowserStack
+* Для запуска на реальном устройстве указать ключ `--context=local_real_device`
+* Для запуска на виртуальном устройстве указать ключ `--context=local_real_device`
+* Для запуска на BrowserStack указать ключ `--context=bstack`
 
 ```bash
 python -m venv .venv
