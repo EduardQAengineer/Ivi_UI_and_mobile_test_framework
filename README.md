@@ -142,6 +142,10 @@ COMMENT = 'some comment' # Комментарий
 
 ![allure_testops_suites](ivi_ui_and_mobile_test_framework/pictures/allure_testops_suites.png)
 
+#### <a target="_blank" href="https://allure.autotests.cloud/launch/33573/tree/551292/attachments?treeId=0">Тестовые артефакты</a>
+
+![allure_testops_suites](ivi_ui_and_mobile_test_framework/pictures/allure_testops_test_attachments.png)
+
 #### <a target="_blank" href="https://allure.autotests.cloud/project/3910/test-cases/28510?treeId=0">Ручной запуск авто теста из Allure TestOps</a>
 
 ![allure_testops_suites](ivi_ui_and_mobile_test_framework/pictures/allure_testops_manual_test_run.png)
