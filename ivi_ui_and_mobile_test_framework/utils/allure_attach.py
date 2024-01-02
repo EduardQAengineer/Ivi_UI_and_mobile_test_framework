@@ -38,6 +38,7 @@ def screenshot(browser):
         extension='.png'
     )
 
+
 def logs(browser):
     log = "".join(f'{text}\n' for text in browser.driver.get_log(log_type='browser'))
     allure.attach(
@@ -46,6 +47,7 @@ def logs(browser):
         attachment_type=allure.attachment_type.TEXT,
         extension='.log'
     )
+
 
 def html(browser):
     source_html = browser.driver.page_source
@@ -56,11 +58,12 @@ def html(browser):
         extension='.html'
     )
 
+
 def video(browser):
     video_url = "https://selenoid.autotests.cloud/video/" + browser.driver.session_id + ".mp4"
     html_markup = "<html><body><video width='100%' height='100%' controls autoplay><source src='" \
-           + video_url \
-           + "' type='video/mp4'></video></body></html>"
+                  + video_url \
+                  + "' type='video/mp4'></video></body></html>"
     allure.attach(
         body=html_markup,
         name='video_' + browser.driver.session_id,

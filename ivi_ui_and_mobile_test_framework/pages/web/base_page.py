@@ -34,4 +34,6 @@ def check_promo_title():
 
 def check_promo_button():
     with step('Проверить кнопку промо акции'):
-        browser.element('.segmentedLanding__section_main .nbl-button__primaryText').should(have.text('Попробовать 60 дней бесплатно'))
+        browser.element(
+            '.segmentedLanding__section_main .nbl-button__primaryText').should(
+            have.text('Попробовать 60 дней бесплатно'))
