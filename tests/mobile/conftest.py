@@ -5,7 +5,7 @@ import pytest
 
 from selene import browser, support
 from appium import webdriver
-from ivi_ui_and_mobile_test_framework import utils
+from ivi_ui_and_mobile_test_framework.utils import allure_attach
 from dotenv import load_dotenv
 
 
@@ -50,9 +50,9 @@ def android_mobile_management(context):
 
     yield
 
-    utils.allure_attach.screenshot(browser)
+    allure_attach.screenshot(browser)
 
-    utils.allure_attach.page_source_xml(browser)
+    allure_attach.page_source_xml(browser)
 
     session_id = browser.driver.session_id
 
@@ -60,4 +60,4 @@ def android_mobile_management(context):
         browser.quit()
 
     if context == 'bstack':
-        utils.allure_attach.bstack_video(session_id)
+        allure_attach.bstack_video(session_id)
