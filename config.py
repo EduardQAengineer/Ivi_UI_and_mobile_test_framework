@@ -1,7 +1,6 @@
 import os
 
 from appium.options.android import UiAutomator2Options
-from dotenv import load_dotenv
 from ivi_ui_and_mobile_test_framework.utils import file
 from pydantic import BaseModel
 
@@ -15,7 +14,6 @@ class Config(BaseModel):
     app_bstack: str = os.getenv('APP')
     platformName: str = os.getenv('PLATFORM_NAME')
     platformVersion: str = os.getenv('PLATFORM_VERSION')
-    load_dotenv(dotenv_path=file.abs_path_from_project('.env.credentials'))
     userName: str = os.getenv('USER_NAME')
     accessKey: str = os.getenv('ACCESS_KEY')
 
