@@ -165,7 +165,10 @@ COMMENT = 'some comment' # Комментарий
 
 ----
 
-### Видео прохождения автотеста
+### Видео прохождения web/UI автотеста
 ![autotest_gif](ivi_ui_and_mobile_test_framework/pictures/autotest.gif)
 
 ----
+
+### Видео прохождения mobile автотеста
+![autotest_gif](ivi_ui_and_mobile_test_framework/pictures/test_mobile_video.gif)
